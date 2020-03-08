@@ -19,6 +19,9 @@ import translateInsetIconURL from './translate/translate-small.png';
 import makeymakeyIconURL from './makeymakey/makeymakey.png';
 import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 
+import bitBrickIconURL from './bitbrick/bitbrick.png';
+import bitBrickInsetIconURL from './bitbrick/bitbrick-small.svg';
+
 import microbitIconURL from './microbit/microbit.png';
 import microbitInsetIconURL from './microbit/microbit-small.svg';
 import microbitConnectionIconURL from './microbit/microbit-illustration.svg';
@@ -150,6 +153,21 @@ export default [
         ),
         featured: true,
         internetConnectionRequired: true
+    },
+    {
+        name: 'bitBrick',
+        extensionId: 'bitbrick',
+        collaborator: 'HelloGeeks',
+        iconURL: bitBrickIconURL,
+        insetIconURL: bitBrickInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect your project with fun"
+                description="Description for the 'bitBrick' extension"
+                id="gui.extension.bitbrick.description"
+            />
+        ),
+        featured: true
     },
     {
         name: 'Makey Makey',
